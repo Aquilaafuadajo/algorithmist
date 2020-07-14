@@ -1,6 +1,7 @@
 <?php 
   $email = '';
   $errors = array('email'=>'');
+  $allErrors = '';
 
   if(isset($_POST['submit'])) {
     // check email
@@ -12,6 +13,14 @@
         $errors['email'] = 'email must be a valid email address';
       }
     }
+
+    if(array_filter($errors)) {
+      $allErrors = '';
+    } else {
+      echo "<script>alert('email saved successfully');</script>";
+      $email = '';
+    }
+    
   }
 ?>
 
