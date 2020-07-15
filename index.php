@@ -1,7 +1,11 @@
 <?php 
+
+  // include db connection
+  include('config/db_connect.php');
+
+
   $email = '';
   $errors = array('email'=>'');
-  $allErrors = '';
 
   if(isset($_POST['submit'])) {
     // check email
@@ -15,10 +19,25 @@
     }
 
     if(array_filter($errors)) {
-      $allErrors = '';
+      //$allErrors = '';
     } else {
-      echo "<script>alert('email saved successfully');</script>";
-      $email = '';
+      $email = mysqli_real_escape_string($conn, $_POST['email']);
+
+      // initialize table
+      // $createTable = "CREATE TABLE users (email VARCHAR(255), created_at TIMESTAMP)";
+      // mysqli_query($conn, $createdb);
+
+      // create sql
+      $sql = "INSERT INTO users(email) VALUES('$email')";
+
+      if(mysqli_query($conn, $sql)) {
+        // success
+        echo "<script>alert('email saved successfully');</script>";
+        $email = '';
+      } else {
+        // error
+        echo 'query error: ' . mysqli_error($conn);
+      }
     }
     
   }
