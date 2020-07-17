@@ -71,7 +71,9 @@ body {
 .form .submit-btn {
   display: block;
 }
-
+.red-text {
+  color: red !important;
+}
 .pd-img {
   padding: 0 40px;
 }

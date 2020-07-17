@@ -74,6 +74,7 @@
               <input type="text" name="email" class="custom-input" placeholder="Enter your email">
               <input type="submit" name="submit" value="NOTIFY ME" class="submit-btn">
             </form> -->
+            </form>
           </div>
           <div class="col-sm">
             <img src="./assets/images/Frame 1 1.png" alt="" class="w-100 lg-screen-img">
@@ -246,6 +247,7 @@
                   <?php echo $errors['email']; ?>
                 </div>
                 <input type="submit" name="submit" value="NOTIFY ME" class="submit-btn">
+              </form>
               <!-- <form action="">
                 <input type="text" name="email" class="custom-input" placeholder="Enter your email">
                 <input type="submit" name="submit" value="NOTIFY ME" class="submit-btn btm-btn">
