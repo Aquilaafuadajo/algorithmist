@@ -76,6 +76,10 @@ body {
   padding: 0 40px;
 }
 
+.red-text {
+  color: red;
+}
+
 .pd-top-bottom {
   padding: 40px 0 !important;
 }
