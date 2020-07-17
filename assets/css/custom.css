@@ -71,9 +71,7 @@ body {
 .form .submit-btn {
   display: block;
 }
-.red-text {
-  color: red !important;
-}
+
 .pd-img {
   padding: 0 40px;
 }
@@ -179,6 +177,9 @@ body {
   letter-spacing: 0.5px;
   text-transform: uppercase;
   color: #FFFFFF;
+  animation: bounce;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
   /* display: inline-block; */
 }
 .btm-btn {
@@ -189,6 +190,7 @@ input:focus {
 }
 .submit-btn:hover {
   opacity: .8;
+  animation: none;
 }
 
 .footer {
@@ -312,9 +314,36 @@ input:focus {
   display: block;
 }
 
+.pd-top {
+  padding-top: 80px;
+}
+
+.mobile-screens {
+  display: none;
+}
+
+.pd-btm-30 {
+  padding-bottom: 30px;
+}
+
+.tab-screens {
+  display: none;
+}
+
+.lang-card:hover {
+  animation: pulse;
+  animation-duration: 2s;
+}
 @media screen and (max-width: 960px) { 
   .pd-img {
     padding: 0 20px;
+  }
+  .lg-screens {
+    display: none;
+  }
+  .tab-screens {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 768px) { 
@@ -354,9 +383,25 @@ input:focus {
 }
 
 @media screen and (max-width: 567px) { 
-  /* .companies {
-    flex-direction: column;
-  } */
+  .grid-container--fill {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+  .lang-card {
+    width: 90px;
+    height: 90px;
+  }
+  .csharp {
+    display: none;
+  }
+  .tab-screens {
+    display: none;
+  }
+  .mobile-screens {
+    display: block;
+  }
+  .lg-screens {
+    display: none;
+  }
   .content {
     padding-top: 10px;
   }
@@ -433,5 +478,4 @@ input:focus {
   .icon {
     margin: 0 10px;
   }
-}
 }

@@ -48,7 +48,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     
+  <link rel="stylesheet" href="./assets/css/animate-on-scroll/aos.min.css">
   <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/animate-css/animate.min.css">
   <link rel="stylesheet" href="./assets/css/custom.css">
   <title>Algorithmist</title>
 </head>
@@ -56,10 +58,10 @@
   <div class="container-fluid">
     <section class="hero">
       <div class="container pd-20">
-        <img src="./assets/images/A Logo 1 (1).png" alt="algorithmist logo" class="logo">
+        <img src="./assets/images/A Logo 1 (1).png" alt="algorithmist logo" class="logo animate__animated animate__fadeInLeft">
         <div class="row">
-          <div class="col-sm top-form-section">
-            <h1 class="lg-text-1">Code smart with <span style="font-weight: 700;">Algorithimist</span></h1>
+          <div class="col-sm top-form-section animate__animated animate__fadeInUp animate__slow">
+            <h1 class="lg-text-1" >Code smart with <span style="font-weight: 700;">Algorithimist</span></h1>
             <h2 class="lg-text-2">Coming Soon!</h2>
             <img src="./assets/images/Frame 1 1.png" alt="" class="w-100 sm-screen-img">
             <form action="index.php" method="POST">
@@ -68,16 +70,16 @@
               <div class="red-text">
                 <?php echo $errors['email']; ?>
               </div>
-              <input type="submit" name="submit" value="NOTIFY ME" class="submit-btn">
+              <input type="submit" name="submit" value="NOTIFY ME" class="submit-btn wow animate__animated animate__bounce">
+            </form>
             <!-- <form action="" class="form">
               <p class="sm-text">Want to get notified when our app is out?</p>
               <input type="text" name="email" class="custom-input" placeholder="Enter your email">
               <input type="submit" name="submit" value="NOTIFY ME" class="submit-btn">
             </form> -->
-            </form>
           </div>
           <div class="col-sm">
-            <img src="./assets/images/Frame 1 1.png" alt="" class="w-100 lg-screen-img">
+            <img src="./assets/images/Frame 1 1.png" alt="" class="w-100 lg-screen-img animate__animated animate__lightSpeedInRight">
           </div>
         </div>
       </div>
@@ -126,16 +128,63 @@
 
     <section class="content wte bg-white">
       <h3 class="custom-h3 mg-btm-30">What to expect</h3>
-      <div class="container">
+      <div class="container lg-screens">
+        <div class="row">
+          <div class="col-sm wow animate_animated animate__bounceInUp">
+            <img src="./assets/images/iPhone 8 - 1 (1)_iphone8spacegrey_portrait 9 (3).png" alt="" class="pd-top">
+          </div>
+          <div class="col-sm wow animate_animated animate__bounceInUp animate__delay-1s">
+            <img src="./assets/images/iPhone 8 - 1 (1)_iphone8spacegrey_portrait 5 (3).png" alt="" class="">
+          </div>
+          <div class="col-sm wow animate_animated animate__bounceInUp animate__delay-2s">
+            <img src="./assets/images/iPhone 8 - 1 (1)_iphone8spacegrey_portrait 4 (2).png" alt="" class="pd-top">
+          </div>
+        </div>
         <div class="row">
           <div class="col-sm">
-            <img src="./assets/images/iPhone 8 - 1 (1)_iphone8spacegrey_portrait 9 (3).png" alt="" class="w-100">
+            <img src="./assets/images/iPhone 8 - 1 (1)_iphone8spacegrey_portrait 6 (1).png" alt="" class="pd-top">
           </div>
           <div class="col-sm">
-            <img src="./assets/images/iPhone 8 - 1 (1)_iphone8spacegrey_portrait 4 (2).png" alt="" class="w-100">
+            <img src="./assets/images/iPhone 8 - 1 (1)_iphone8spacegrey_portrait 7 (1).png" alt="" class="">
           </div>
           <div class="col-sm">
-            <img src="./assets/images/iPhone 8 - 1 (1)_iphone8spacegrey_portrait 9 (3).png" alt="" class="w-100">
+            <img src="./assets/images/iPhone 8 - 1 (1)_iphone8spacegrey_portrait 8 (1).png" alt="" class="pd-top">
+          </div>
+        </div>
+      </div>
+      <div class="container tab-screens">
+        <div class="row">
+          <div class="col-sm">
+            <img src="./assets/images/iPhone 8 - 1 (1)_iphone8spacegrey_portrait 9 (4).png" alt="" class="pd-top">
+          </div>
+          <div class="col-sm">
+            <img src="./assets/images/iPhone 8 - 1 (1)_iphone8spacegrey_portrait 14.png" alt="" class="">
+          </div>
+          <div class="col-sm">
+            <img src="./assets/images/iPhone 8 - 1 (1)_iphone8spacegrey_portrait 10.png" alt="" class="pd-top">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <img src="./assets/images/iPhone 8 - 1 (1)_iphone8spacegrey_portrait 12.png" alt="" class="pd-top">
+          </div>
+          <div class="col-sm">
+            <img src="./assets/images/iPhone 8 - 1 (1)_iphone8spacegrey_portrait 13.png" alt="" class="">
+          </div>
+          <div class="col-sm">
+            <img src="./assets/images/iPhone 8 - 1 (1)_iphone8spacegrey_portrait 9 (5).png" alt="" class="pd-top">
+          </div>
+        </div>
+      </div>
+      <div class="container mobile-screens">
+        <div class="row">
+          <div class="col">
+            <img class="pd-btm-30" src="./assets/images/iPhone 8 - 1 (1)_iphone8spacegrey_portrait 9 (4).png" alt="">
+            <img class="pd-btm-30" src="./assets/images/iPhone 8 - 1 (1)_iphone8spacegrey_portrait 10.png" alt="">
+            <img class="pd-btm-30" src="./assets/images/iPhone 8 - 1 (1)_iphone8spacegrey_portrait 14.png" alt="">
+            <img src="./assets/images/iPhone 8 - 1 (1)_iphone8spacegrey_portrait 12.png" alt="" class="pd-btm-30">
+            <img src="./assets/images/iPhone 8 - 1 (1)_iphone8spacegrey_portrait 13.png" alt="" class="pd-btm-30">
+            <img src="./assets/images/iPhone 8 - 1 (1)_iphone8spacegrey_portrait 9 (5).png" alt="" class="pd-btm-30">
           </div>
         </div>
       </div>
@@ -143,17 +192,17 @@
 
     <section class="content bg-light-grey">
       <div class="container">
-        <h3 class="custom-h3">Outputs result in over 50 languages</h3>
+        <h3 class="custom-h3 wow animate__animated animate__backInRight">Outputs result in over 50 languages</h3>
         <div class="container-fluid mg-20">
           <div class="grid-container--fill">
             <div class="lang-card">
               <img src="./assets/images/new js.png" alt="" class="w-100">
             </div>
             <div class="lang-card">
-              <img src="./assets/images/csharp.png" alt="" class="w-100">
+              <img src="./assets/images/new swift.png" alt="" class="w-100">
             </div>
             <div class="lang-card">
-              <img src="./assets/images/new swift.png" alt="" class="w-100">
+              <img src="./assets/images/Python.png" alt="" class="w-100">
             </div>
             <div class="lang-card">
               <img src="./assets/images/Java.png" alt="" class="w-100">
@@ -164,41 +213,10 @@
             <div class="lang-card">
               <img src="./assets/images/php.png" alt="" class="w-100">
             </div>
-            <div class="lang-card">
-              <img src="./assets/images/Python.png" alt="" class="w-100">
+            <div class="lang-card csharp">
+              <img src="./assets/images/csharp.png" alt="" class="w-100">
             </div>
           </div>
-          <!-- <div class="row">
-            <div class="col-md">
-              <div class="row">
-                <div class="lang-card">
-                  <img src="./assets/images/angular.png" alt="" class="w-100">
-                </div>
-                <div class="lang-card">
-                  <img src="./assets/images/csharp.png" alt="" class="w-100">
-                </div>
-                <div class="lang-card">
-                  <img src="./assets/images/Dart.png" alt="" class="w-100">
-                </div>
-                <div class="lang-card">
-                  <img src="./assets/images/Java.png" alt="" class="w-100">
-                </div>
-              </div>
-            </div>
-            <div class="col-md">
-              <div class="row">
-                <div class="lang-card">
-                  <img src="./assets/images/javascript-512.png" alt="" class="w-100">
-                </div>
-                <div class="lang-card">
-                  <img src="./assets/images/php.png" alt="" class="w-100">
-                </div>
-                <div class="lang-card">
-                  <img src="./assets/images/angular.png" alt="" class="w-100">
-                </div>
-              </div>
-            </div>
-          </div> -->
         </div>
       </div>
     </section>
@@ -281,12 +299,30 @@
   <script src="./assets/js/jquery/jquery-3.5.1.min.js"></script>
   <script src="./assets/js/bootstrap/bootstrap.min.js"></script>
   <script src="assets/js/typed/typed.js"></script>
+  <script src="./assets/js/animate-on-scroll/aos.min.js"></script>
+  <script src="./assets/js/wow/wow.min.js"></script>
+  <script>
+    $(function(){
+      new WOW().init(); 
+    });
+    $(window).on('load', function(){
+
+new WOW().init(); 
+});
+  </script>
+  <script>
+     // AOS 
+      AOS.init({
+        duration: 1000,
+        // once: true
+      });
+  </script>
   <script>
     var typed = new Typed('#typed', {
       stringsElement: '#typed-strings',
       typeSpeed: 20,
-      // loop: true,
-      // loopCount: Infinity,
+      loop: true,
+      loopCount: Infinity,
       backDelay: 1000,
     });
   </script>
