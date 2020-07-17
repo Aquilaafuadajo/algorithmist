@@ -181,9 +181,9 @@ body {
   letter-spacing: 0.5px;
   text-transform: uppercase;
   color: #FFFFFF;
-  animation: bounce;
+  /* animation: bounce;
   animation-duration: 2s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: infinite; */
   /* display: inline-block; */
 }
 .btm-btn {
@@ -194,7 +194,7 @@ input:focus {
 }
 .submit-btn:hover {
   opacity: .8;
-  animation: none;
+  /* animation: none; */
 }
 
 .footer {
